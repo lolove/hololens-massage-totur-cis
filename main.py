@@ -10,7 +10,7 @@ data = {}
 issue_data = {}
 
 def writeIssueDataBase():
-    with open('./issue.json','w') as file:
+    with open('./Issue.json','w') as file:
         global issue_data
         file.write(json.dumps(issue_data,ensure_ascii=False))
     readIssueDataBase()
@@ -29,7 +29,7 @@ def writeDataBase():
 #         print(issue_data)
 
 def readIssueDataBase():
-    with open('./issue.json','r') as file:
+    with open('./Issue.json','r') as file:
         global issue_data
         readdata = file.read()
         print(readdata)
